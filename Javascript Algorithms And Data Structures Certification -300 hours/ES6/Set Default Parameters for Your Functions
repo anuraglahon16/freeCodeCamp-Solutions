@@ -1,0 +1,15 @@
+const increment = (function() {
+"use strict";
+return function increment(number,value=1) {
+switch(value) {
+case isNaN(value) :
+return number +value;
+break;
+case value :
+return number+value;
+break;
+default : return NaN;}
+};
+})();
+console.log(increment(5, 2)); // returns 7
+console.log(increment(5)); // returns NaN
